@@ -1,7 +1,7 @@
 import {Router} from 'express';
-import {getVideos} from './videos.controller';
+import * as VideoController from './videos.controller';
 const router = Router();
 
-router.get('/videos',getVideos);
+router.get('/videos',VideoController.getVideos);
 
 export default router;
