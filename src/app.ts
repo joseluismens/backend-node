@@ -5,7 +5,7 @@ import videoRoutes from "./routes/videos.routes";
 import cors from 'cors';
 const app = Express();
 
-app.set('port',config.PORT);
+app.set('port',3000);
 
 app.use(morgan('dev'));
 app.use(cors());
